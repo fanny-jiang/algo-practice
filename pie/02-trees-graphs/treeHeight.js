@@ -36,3 +36,45 @@ function treeHeight(tree) {
   let right = treeHeight(tree.right)
   return Math.max(left, right) + 1
 }
+
+/*
+
+example
+
+let bst = {
+  value: 'A',
+  left: {
+    value: 'B',
+    left: null,
+    right: null
+  },
+  right: {
+    value: 'C',
+    left: {
+      value: 'D',
+      left: {
+        value: 'F',
+        left: null,
+        right: null
+      },
+      right: {
+        value: 'G',
+        left: null,
+        right: null
+      }
+    },
+    right: {
+      value: 'E',
+      left: null,
+      right: {
+        value: 'H',
+        left: null,
+        right: null
+      }
+    }
+  }
+}
+
+treeHeight(bst);
+
+*/

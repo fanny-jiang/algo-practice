@@ -28,7 +28,7 @@ Approach: Do a recursive depth-first search and keep a count of the left and rig
 //   return 1 + Math.max(leftCount, rightCount)
 // }
 
-// Working solution
+// Working solution O(n)
 
 function treeHeight(tree) {
   if (tree === null) return 0
